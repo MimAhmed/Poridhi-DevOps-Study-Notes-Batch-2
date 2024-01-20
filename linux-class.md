@@ -1,5 +1,25 @@
-# Basic Linux Commands
+# Basic Linux Introduction
 
+**What is Linux**
+Linux is a family of open-source Unix-like operating systems based on the Linux kernel. [more](https://en.wikipedia.org/wiki/Linux)
+
+**What is Command Line**
+
+The command line, also known as the command-line interface (CLI) or terminal, is a text-based interface in which the user interacts with a computer by typing commands. It allows users to perform various tasks and operations on a computer without using a graphical user interface (GUI)
+
+
+
+**Linux File Hierarchy Structure**
+
+![image](https://linuxhandbook.com/content/images/2020/06/linux-directory-structure.png)
+
+The Linux File Hierarchy Structure (FHS) is a system that organizes the files and directories on a Linux system. It provides a standard and consistent way of organizing the file system, ensuring that different programs and services can find the files and resources they need
+```
+Link 1: https://help.ubuntu.com/community/LinuxFilesystemTreeOverview
+Link 2: https://www.geeksforgeeks.org/linux-file-hierarchy-structure/
+
+```
+# Basic Linux Commands
 `ls`
 
 List the files and directories in the current directory.
@@ -94,4 +114,17 @@ Purpose:
 
 To display the content of one or more files.
 To concatenate and display the content of multiple files.
+```
+
+`grep`
+
+The **grep** command in Linux is used to search for specific patterns or regular expressions in files or streams of text. The name "grep" stands for "Global Regular Expression Print." It is a powerful tool for text searching and manipulation.
+
+```shell
+Command: grep [options] pattern [file(s)]
+
+Example: grep -i "pattern" filename.txt
+
+pattern: The text or regular expression you want to search for.
+[file(s)]: Optional. If provided, grep will search for the pattern in the specified file(s). If not provided, grep reads from the standard input (e.g., output from another command or from a pipeline).
 ```
