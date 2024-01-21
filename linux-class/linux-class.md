@@ -20,7 +20,8 @@ Link 2: https://www.geeksforgeeks.org/linux-file-hierarchy-structure/
 
 ```
 # Basic Linux Commands
-`ls`
+
+### `ls`
 
 List the files and directories in the current directory.
 
@@ -117,7 +118,7 @@ The cat command in Linux is used to concatenate and display the content of files
 Command: cat [filename]
 
 ```shell
-Ex: cat myfile.txt
+cat myfile.txt
 ```
 Purpose:
 
@@ -219,3 +220,7 @@ sudo chmod g+w file.txt       # Grant write permission to the group
 ## MODULE 01: CLASS 01 HOMEWORK (20/01/2024)
 
 ### MAKE GROUP OF USER AND IMPLEMENT DIFFERENT POLICIES ON THEM.
+
+##### Diagram
+
+![linux-group-permission](https://i.ibb.co/gJgMSL0/Linux-Group-Permission-HW1.png)
