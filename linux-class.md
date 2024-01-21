@@ -44,14 +44,15 @@ cd .. : Move to the parent directory.
 cd ~ : Move to the home directory.
 ```
 
-`pwd`
+### `pwd` (Present Work Directory)
 
 The pwd command in Linux stands for "Print Working Directory.
 
 ```shell
 $ pwd
-/home/user/documents
 ```
+**Output:** /home/user/documents
+
 In this example, the output /home/user/documents indicates that the current working directory is documents, which is located inside the user directory, which, in turn, is inside the home directory.
 
 Purpose:
@@ -59,13 +60,14 @@ Purpose:
 - It helps you understand your current location within the file system.
 - Useful when you need to reference the full path of the current directory or provide the path for other commands.
 
-`mkdir` (Make Directory)
+### `mkdir` (Make Directory)
 
 The mkdir command in Linux is used to create new directories (folders).
 
 ### Create a new directory:
 
 This creates a directory named my_directory in the current working directory.
+
 ```shell
 mkdir my_directory
 ```
@@ -82,7 +84,7 @@ In this example, it creates both my_parent_directory and my_child_directory.
 **Purpose:**
 - To create new directories in the file system.
 
-### `touch`
+### `touch` (Create New File)
 
 The touch command in Linux is used to create empty files or update the access and modification times of existing files.
 
@@ -129,11 +131,15 @@ The **grep** command in Linux is used to search for specific patterns or regular
 
 
 Command: grep [options] pattern [file(s)]
+
 ```shell
 grep -i "pattern" filename.txt
 ```
 **Pattern:** The text or regular expression you want to search for.
-[file(s)]: Optional. If provided, grep will search for the pattern in the specified file(s). If not provided, grep reads from the standard input (e.g., output from another command or from a pipeline).
+[file(s)]: 
+
+Optional. 
+If provided, **grep** will search for the pattern in the specified file(s). If not provided, grep reads from the standard input (e.g., output from another command or from a pipeline).
 
 # Linux User and Group Management Documentation
 
@@ -170,6 +176,7 @@ sudo adduser admin
 ```shell
 sudo passwd reviewer1
 ```
+
 ```shell 
 sudo passwd admin
 ```
@@ -208,3 +215,7 @@ sudo usermod -aG admins admin1
 sudo chmod g+r file.txt       # Grant read permission to the group
 sudo chmod g+w file.txt       # Grant write permission to the group
 ```
+
+## MODULE 01: CLASS 01 HOMEWORK (20/01/2024)
+
+### MAKE GROUP OF USER AND IMPLEMENT DIFFERENT POLICIES ON THEM.
