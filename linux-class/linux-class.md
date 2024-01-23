@@ -224,3 +224,46 @@ sudo chmod g+w file.txt       # Grant write permission to the group
 ##### Diagram
 
 ![linux-group-permission](https://i.ibb.co/gJgMSL0/Linux-Group-Permission-HW1.png)
+
+#### Command 
+
+**Create Group**
+
+```shell
+sudo addgroup admins
+sudo addgroup reviewers
+```
+
+**Create Users**
+
+```shell
+sudo adduser admin1
+sudo adduser admin2
+sudo adduser reviewer1
+sudo adduser reviewer2
+```
+
+**Add Users to Groups**
+
+```shell
+sudo usermod -aG admins admin1
+sudo usermod -aG admins admin2
+sudo usermod -aG reviewers reviewer1
+sudo usermod -aG reviewers reviewer2
+```
+
+**Set Permissions**
+
+#### Set ownership to admins group and give read, write, execute permissions
+
+```shell
+sudo chown :admins /path/to/your/directory
+sudo chmod 770 /path/to/your/directory
+``````
+#### Give reviewer group only read permissions
+
+```shell
+sudo chown :reviewers /path/to/your/directory
+sudo chmod 740 /path/to/your/directory
+```
+Replace /path/to/your/directory with the actual path of the directory.
